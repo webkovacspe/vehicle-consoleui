@@ -2,7 +2,7 @@ package hu.kovacspeterzoltan.bootcamp.vehicleconsoleui.controller;
 
 import hu.kovacspeterzoltan.bootcamp.vehicleregister.dao.VehicleRegisterInteractorInterface;
 
-public class VehicleConsoleUI {
+public class ConsoleUIController {
     VehicleRegisterInteractorInterface registerInteractor;
 
     public void setRegisterInteractorImp(VehicleRegisterInteractorInterface registerInteractorImp) {
