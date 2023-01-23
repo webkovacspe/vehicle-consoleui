@@ -1,7 +1,7 @@
 package hu.kovacspeterzoltan.bootcamp.vehicleconsoleui.dao;
 
 import hu.kovacspeterzoltan.bootcamp.vehicleregister.dao.VehicleRegisterPresenterInterface;
-import hu.kovacspeterzoltan.bootcamp.vehicleregister.parser.InvalidJsonStringException;
+import hu.kovacspeterzoltan.bootcamp.vehicleregister.validator.InvalidJsonStringException;
 import org.json.JSONException;
 import org.json.JSONObject;
 
