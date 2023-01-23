@@ -1,12 +1,12 @@
-package hu.kovacspeterzoltan.bootcamp.vehicleconsoleui.dao;
+package hu.kovacspeterzoltan.bootcamp.vehicleconsoleui.dto;
 
 import hu.kovacspeterzoltan.bootcamp.vehicleconsoleui.view.ConsoleUIView;
-import hu.kovacspeterzoltan.bootcamp.vehicleregister.api.VehicleRegisterPresenter;
+import hu.kovacspeterzoltan.bootcamp.vehicleregister.api.VehicleRegisterPresenterInterface;
 import hu.kovacspeterzoltan.bootcamp.vehicleregister.validator.InvalidJsonStringException;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class ConsoleUIRegisterPresenterImp implements VehicleRegisterPresenter {
+public class ConsoleUIRegisterPresenterImp implements VehicleRegisterPresenterInterface {
     ConsoleUIView view;
 
     public ConsoleUIRegisterPresenterImp() {
