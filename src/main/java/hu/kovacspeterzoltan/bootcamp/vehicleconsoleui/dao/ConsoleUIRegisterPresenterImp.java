@@ -14,6 +14,10 @@ public class ConsoleUIRegisterPresenterImp implements VehicleRegisterPresenterIn
     @Override
     public void displayJsonRequest(String jsonString) {
         try {
+            //TODO szét kell szedni az alábbi részekre:
+            //- Validálás
+            //- Model: ami parsol-ja a kapott json stringet
+            //- View: ami CSAK megjeleníti (System.out.println)
             JSONObject jsonObject = new JSONObject(jsonString);
             String message = """
                 A keresett jármű adatai:

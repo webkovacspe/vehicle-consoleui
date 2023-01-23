@@ -42,6 +42,7 @@ public class ConsoleUIController {
     }
     private void saveAction() {
         try {
+            //TODO szét kell szedni validálás, parsolás és View részekre
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("vehicle", "vehicle");
 
