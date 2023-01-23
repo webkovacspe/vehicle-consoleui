@@ -35,7 +35,7 @@ public class ConsoleUIController {
             System.out.println("Adja meg a rendszámot:");
             jsonObject.put("registrationNumber", scanner.next());
 
-            registerInteractor.getVehicleByRegisterNumber(jsonObject.toString());
+            registerInteractor.findVehicleByRegistrationNumber(jsonObject.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
