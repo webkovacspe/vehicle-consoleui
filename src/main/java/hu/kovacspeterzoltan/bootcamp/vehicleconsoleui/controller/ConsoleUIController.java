@@ -73,8 +73,4 @@ public class ConsoleUIController {
         action = scanner.next();
         return action;
     }
-
-    private boolean isValidAction(String action) {
-        return ("r".equals(action) || "l".equals(action) || "k".equals(action));
-    }
 }

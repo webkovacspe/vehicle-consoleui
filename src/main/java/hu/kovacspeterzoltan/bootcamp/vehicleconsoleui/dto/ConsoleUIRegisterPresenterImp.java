@@ -18,7 +18,7 @@ public class ConsoleUIRegisterPresenterImp implements VehicleRegisterPresenterIn
     }
 
     @Override
-    public void displayJsonRequest(String jsonString) {
+    public void displayJsonResponse(String jsonString) {
         try {
             //TODO szét kell szedni az alábbi részekre:
             //- Validálás
