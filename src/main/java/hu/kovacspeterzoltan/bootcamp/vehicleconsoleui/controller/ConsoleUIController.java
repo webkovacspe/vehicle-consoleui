@@ -1,16 +1,16 @@
 package hu.kovacspeterzoltan.bootcamp.vehicleconsoleui.controller;
 
-import hu.kovacspeterzoltan.bootcamp.vehicleregister.dao.VehicleRegisterInteractorInterface;
+import hu.kovacspeterzoltan.bootcamp.vehicleregister.api.VehicleRegisterAPI;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Scanner;
 
 public class ConsoleUIController {
-    VehicleRegisterInteractorInterface registerInteractor;
+    VehicleRegisterAPI registerInteractor;
     Scanner scanner;
 
-    public void setRegisterInteractorImp(VehicleRegisterInteractorInterface registerInteractorImp) {
+    public void setRegisterInteractorImp(VehicleRegisterAPI registerInteractorImp) {
         registerInteractor = registerInteractorImp;
     }
     public void start() {
