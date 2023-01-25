@@ -1,18 +1,25 @@
 package hu.kovacspeterzoltan.bootcamp.vehicleconsoleui.controller;
 
-import hu.kovacspeterzoltan.bootcamp.vehicleregister.api.VehicleRegisterAPI;
+import hu.kovacspeterzoltan.bootcamp.vehicleregister.api.VehicleRegisterFindAPI;
+import hu.kovacspeterzoltan.bootcamp.vehicleregister.api.VehicleRegisterSaveVehicleAPI;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Scanner;
 
 public class ConsoleUIController {
-    VehicleRegisterAPI registerInteractor;
+    VehicleRegisterSaveVehicleAPI vehicleRegisterSaveVehicleInteractor;
+    VehicleRegisterFindAPI vehicleRegisterFindInteractor;
     Scanner scanner;
 
-    public void setRegisterInteractorImp(VehicleRegisterAPI registerInteractorImp) {
-        registerInteractor = registerInteractorImp;
+    public void setSaveVehicleInteractorImp(VehicleRegisterSaveVehicleAPI saveVehicleInteractorImp) {
+        vehicleRegisterSaveVehicleInteractor = saveVehicleInteractorImp;
     }
+
+    public void setFindInteractorImp(VehicleRegisterFindAPI findInteractorImp) {
+        vehicleRegisterFindInteractor = findInteractorImp;
+    }
+
     public void start() {
         scanner = new Scanner(System.in);
         String action = null;
@@ -35,7 +42,7 @@ public class ConsoleUIController {
             System.out.println("Adja meg a rendszámot:");
             jsonObject.put("registrationNumber", scanner.next());
 
-            registerInteractor.findVehicleByRegistrationNumber(jsonObject.toString());
+            vehicleRegisterFindInteractor.findVehicleByRegistrationNumber(jsonObject.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -59,7 +66,7 @@ public class ConsoleUIController {
             System.out.println("Adja meg a jármű kategóriáját:");
             jsonObject.put("vehicleType", scanner.next());
 
-            registerInteractor.saveVehicle(jsonObject.toString());
+            vehicleRegisterSaveVehicleInteractor.saveVehicle(jsonObject.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
